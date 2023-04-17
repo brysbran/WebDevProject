@@ -1,0 +1,77 @@
+/*
+Author: Bryson Brandon
+Date: 4/17/23
+*/
+
+body{
+    background:#8198a6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    margin: 1px;
+}
+
+h1.rule{
+    text-align:center;
+
+}
+
+iframe.rule{
+    align-items:center;
+}
+
+div.container{
+    position:relative;
+    top:3em;
+    margin:20px auto;
+    max-width:800px;
+    min-width: 320px;
+}
+div.menu{
+    position:fixed;
+    display:flex;
+    margin:15px auto;
+    position:absolute;
+    align-items: center;
+}
+
+.floatLeft{
+    display:block;
+    float:left;
+    height:150px;
+    margin-right:1em;
+}
+.floatRight{
+    display:block;
+    float:right;
+    height:150px;
+    margin-right:1em;
+}
+nav a {
+    display: flex;
+    float:none;
+    color: #3b4e59;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    align-items:center;
+    justify-content: space-between;
+
+
+}
+nav{
+    display: flex;
+    align-items:center;
+    text-align:center;
+    background: #a7c6d9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 5;
+}
+nav a:hover{
+    color: #3b4e59;
+    border-bottom: 2px solid #3b4e59;
+    border-top:#3b4e59;
+}
