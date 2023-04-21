@@ -5,27 +5,35 @@ Date: 4/17/23
 
 body{
     background:#8198a6;
+    
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
     margin: 1px;
 }
 
-h1.rule{
-    text-align:center;
-
-}
+ .h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  .h2{
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
 
 iframe.rule{
     align-items:center;
 }
 
-div.container{
-    position:relative;
-    top:3em;
-    margin:20px auto;
-    max-width:800px;
-    min-width: 320px;
-}
+ .container {
+    max-width: 1200px;
+    width: 1000px;
+    position: relative;
+    margin: auto;
+  }
 div.menu{
     position:fixed;
     display:flex;
