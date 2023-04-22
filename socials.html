@@ -46,7 +46,7 @@
             if (storedTheme) {
                 body.classList.add(storedTheme);
                 if (storedTheme === "dark-theme") {
-                    icon.src = "images/sun.png";
+                    icon.src = "images/sun2.png";
                 } else {
                     icon.src = "images/moon.png";
                 }
@@ -55,7 +55,7 @@
             icon.onclick = function () {
                 body.classList.toggle("dark-theme");
                 if (body.classList.contains("dark-theme")) {
-                    icon.src = "images/sun.png";
+                    icon.src = "images/sun2.png";
                     localStorage.setItem("theme", "dark-theme"); 
                 } else {
                     icon.src = "images/moon.png";
