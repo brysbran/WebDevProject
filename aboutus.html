@@ -24,11 +24,12 @@ Date: 4/19/23
             <a href="aboutus.html">About Us</a>
             <a href="booking.html">Booking</a>
             <a href="socials.html">Socials</a>
+            <img src="images/moon.png" id="icon">
         </nav>
     </div>
  
     <div class="container">
-        <h1 class="h1">Adrians Drumming</h1>
+        <h1 class="h1">Adrian's Drumming</h1>
         <p>Welcome to Adrian's Drumming! Adrian is here to help you improve your drumming skills and achieve your musical goals.</p>
         <h2 class="h2">About Adrian</h2>
         <p>Adrian is a professional drummer with over 10 years of experience. He has performed with various bands and artists, and has a deep understanding of different drumming styles and techniques. 
@@ -51,5 +52,33 @@ Date: 4/19/23
             <br>
         </div>
     </div>
+
+     <!--Darkmode script added by Caden Atwell 4/21/23-->
+    <script>
+        var icon = document.getElementById("icon");
+        var body = document.body;
+    
+       
+        var storedTheme = localStorage.getItem("theme");
+        if (storedTheme) {
+            body.classList.add(storedTheme);
+            if (storedTheme === "dark-theme") {
+                icon.src = "images/sun.png";
+            } else {
+                icon.src = "images/moon.png";
+            }
+        }
+    
+        icon.onclick = function () {
+            body.classList.toggle("dark-theme");
+            if (body.classList.contains("dark-theme")) {
+                icon.src = "images/sun.png";
+                localStorage.setItem("theme", "dark-theme"); 
+            } else {
+                icon.src = "images/moon.png";
+                localStorage.setItem("theme", ""); 
+            }
+        }
+    </script>
 </body>
 </html>
