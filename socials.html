@@ -16,15 +16,16 @@
     <div class="menu">
         <nav>
             <a href="home.html">Home</a>
-            <a href="aboutus.html">About Us</a>
-            <a href="booking.html">Booking</a>
-            <a href="socials.html">Socials</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="booking.html">Booking</a>
+                <a href="socials.html">Socials</a>
+                <img src="images/moon.png" id="icon">
         </nav>
 </div>
 
             <div class="container">
     
-            <h1 class="h1">Adrians Socials</h1>
+            <h1 class="h1">Adrian's Socials</h1>
             <p>Follow Adrian on his social media accounts for updates on his performances, drumming tips, and behind-the-scenes footage.</p>
             <ul>
                 <li><a href="https://www.facebook.com/fakeadriandrummer"><img src="images/facebook.png" alt="Facebook"></a></li>
@@ -34,4 +35,34 @@
                 <li><a href="https://www.tiktok.com/fakeadriandrummer"><img src="images/tiktok.png" alt="TikTok"></a></li>
             </ul>
         </div>
+
+        <!--Darkmode script added by Caden Atwell 4/21/23-->
+        <script>
+            var icon = document.getElementById("icon");
+            var body = document.body;
+        
+            
+            var storedTheme = localStorage.getItem("theme");
+            if (storedTheme) {
+                body.classList.add(storedTheme);
+                if (storedTheme === "dark-theme") {
+                    icon.src = "images/sun.png";
+                } else {
+                    icon.src = "images/moon.png";
+                }
+            }
+        
+            icon.onclick = function () {
+                body.classList.toggle("dark-theme");
+                if (body.classList.contains("dark-theme")) {
+                    icon.src = "images/sun.png";
+                    localStorage.setItem("theme", "dark-theme"); 
+                } else {
+                    icon.src = "images/moon.png";
+                    localStorage.setItem("theme", "");
+                }
+            }
+        </script>
+
+        
     </html>
