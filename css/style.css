@@ -42,6 +42,7 @@ iframe.rule{
     width: 1000px;
     position: relative;
     margin: auto;
+    margin-top: 10%;
  }
 
 div.menu{
@@ -129,3 +130,4 @@ form {
     align-items: center;
     text-align: center;
   }
+
