@@ -1,0 +1,71 @@
+<!--
+    This is the page for booking, which contains the calendar,
+    rates, and contact information for the drumming
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Booking with Adrian</title>
+        <link rel="icon" href="images/Icon.png">
+        
+    </head>
+    <body>
+    <div class="menu">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="booking.html">Booking</a>
+            <a href="socials.html">Socials</a>
+            <img src="images/moon.png" id="icon">
+        </nav>
+    </div>
+        <div class ="container">
+            <br>
+        <h1 class="h1">Booking Information!</h1>
+        <div id="pricing">
+            <h2 class="h2">Pricing</h2>
+            <p>Adrian's Drumming offers competitive pricing for drum lessons:</p>
+            <ul>
+                <li>Single Lesson - $40</li>
+                <li>5-Lesson Package - $180</li>
+                <li>10-Lesson Package - $350</li>
+            </ul>
+            <p>Contact us for more information on pricing and to book your drum lessons with Adrian today!</p>
+            <p>@adriansemail.com</p>
+        </div>
+            
+
+<h1 class="h1">Adrian's Calendar</h1>
+<iframe src="https://calendar.google.com/calendar/embed?src=fffddf906e3a869aac37b62b22d98ccbe4b48161d90eeb213ba388d7120b932d%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>    </div>
+
+     <!--Darkmode script added by Caden Atwell 4/21/23-->
+    <script>
+        var icon = document.getElementById("icon");
+        var body = document.body;
+    
+      
+        var storedTheme = localStorage.getItem("theme");
+        if (storedTheme) {
+            body.classList.add(storedTheme);
+            if (storedTheme === "dark-theme") {
+                icon.src = "images/sun2.png";
+            } else {
+                icon.src = "images/moon.png";
+            }
+        }
+    
+        icon.onclick = function () {
+            body.classList.toggle("dark-theme");
+            if (body.classList.contains("dark-theme")) {
+                icon.src = "images/sun2.png";
+                localStorage.setItem("theme", "dark-theme"); 
+            } else {
+                icon.src = "images/moon.png";
+                localStorage.setItem("theme", ""); 
+            }
+        }
+    </script>
+</body>
+</html>

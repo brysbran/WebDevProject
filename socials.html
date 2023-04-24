@@ -1,0 +1,68 @@
+<!--
+    This page should just contain links to his socials
+    as well as any relevant personal information about him and 
+    pictures/videos
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Adrian Socials</title>
+        <link rel="icon" href="images/Icon.png">
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+        
+    </head>
+    <div class="menu">
+        <nav>
+            <a href="home.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="booking.html">Booking</a>
+                <a href="socials.html">Socials</a>
+                <img src="images/moon.png" id="icon">
+        </nav>
+</div>
+
+            <div class="container">
+    
+            <h1 class="h1">Adrian's Socials</h1>
+            <p>Follow Adrian on his social media accounts for updates on his performances, drumming tips, and behind-the-scenes footage.</p>
+            <ul>
+                <li><a href="https://www.facebook.com/fakeadriandrummer"><img src="images/facebook.png" width="300px" height="300px" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/fakeadriandrummer"><img src="images/instagram.png" width="300px" height="300px" alt="Instagram"></a></li>
+                <li><a href="https://www.twitter.com/fakeadriandrummer"><img src="images/twitter.png" width="300px" height="300px" alt="Twitter"></a></li>
+                <li><a href="https://www.youtube.com/fakeadriandrummer"><img src="images/youtube.png" width="300px" height="300px" alt="YouTube"></a></li>
+                <li><a href="https://www.tiktok.com/fakeadriandrummer"><img src="images/tiktok.png" width="300px" height="300px" alt="TikTok"></a></li>
+            </ul>
+        </div>
+
+        <!--Darkmode script added by Caden Atwell 4/21/23-->
+        <script>
+            var icon = document.getElementById("icon");
+            var body = document.body;
+        
+            
+            var storedTheme = localStorage.getItem("theme");
+            if (storedTheme) {
+                body.classList.add(storedTheme);
+                if (storedTheme === "dark-theme") {
+                    icon.src = "images/sun2.png";
+                } else {
+                    icon.src = "images/moon.png";
+                }
+            }
+        
+            icon.onclick = function () {
+                body.classList.toggle("dark-theme");
+                if (body.classList.contains("dark-theme")) {
+                    icon.src = "images/sun2.png";
+                    localStorage.setItem("theme", "dark-theme"); 
+                } else {
+                    icon.src = "images/moon.png";
+                    localStorage.setItem("theme", "");
+                }
+            }
+        </script>
+
+        
+    </html>

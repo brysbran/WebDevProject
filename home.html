@@ -1,0 +1,96 @@
+<!--
+    This is the homepage for the website, which contains our mission statement,
+    some main pictures, and some general information.
+     Author : Bryson Brandon
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Drumming with Adrian</title>
+        <link rel="icon" href="images/Icon.png">
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+    </head>
+    <body>
+    <div class="menu">
+        <nav>
+           
+                <a href="home.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="booking.html">Booking</a>
+                <a href="socials.html">Socials</a>
+                <img src="images/moon.png" id="icon">
+            </nav>
+        <!-- <a href="aboutus.html">/a> -->  
+    </div>
+    <h1 class ="h1">Adrian's Drumming</h1>
+<div class="container">
+            <h2 class="h2">Our Mission Statement</h2>
+            <p>
+                <img class="floatLeft" src="images/logo.jpg" alt="happydrummer">
+                My mission is to inspire and equip aspiring drummers in Johnson City and beyond 
+                with the skills, knowledge, and passion needed to confidently express themselves 
+                through drumming. I aim to provide a welcoming and supportive environment that fosters 
+                growth, creativity, and community. Through personalized drum lessons, resources, and events, 
+                I strive to help my students achieve their musical goals and find joy in the art of drumming.
+            </p>
+        </div>
+    <div class="container">
+        <br>
+        <br>
+        <h2 class="h2">Drumming is my passion!</h2>
+        <p>
+            <img class="floatRight" src="images/kiddrummer.jpg" alt="crazy drummer kid">
+            Here at Adrian's Drumming I wanna help you become the greatest musician you can! 
+            Ever since I was a kid I've always loved music, and I want to pass on that love to the 
+            next generation. I have a wide range of playing ability, and an infinite amount of patience.
+        </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <h2 class="h2">Video of Adrian's Drumming Philosophy</h2>
+        <br>
+        <div>
+            <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/Ni6tvABviJM" title="YouTube video player"
+             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+              web-share" allowfullscreen></iframe></p>
+        </div>
+        <br>
+    </div>
+
+     <!--Darkmode script added by Caden Atwell 4/21/23-->
+    <script>
+        var icon = document.getElementById("icon");
+        var body = document.body;
+    
+        
+        var storedTheme = localStorage.getItem("theme");
+        if (storedTheme) {
+            body.classList.add(storedTheme);
+            if (storedTheme === "dark-theme") {
+                icon.src = "images/sun2.png";
+            } else {
+                icon.src = "images/moon.png";
+            }
+        }
+    
+        icon.onclick = function () {
+            body.classList.toggle("dark-theme");
+            if (body.classList.contains("dark-theme")) {
+                icon.src = "images/sun2.png";
+                localStorage.setItem("theme", "dark-theme"); 
+            } else {
+                icon.src = "images/moon.png";
+                localStorage.setItem("theme", ""); 
+            }
+        }
+    </script>
+    </body>
+</html>
+
