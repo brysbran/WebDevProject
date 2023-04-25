@@ -2,47 +2,125 @@
 Author: Bryson Brandon
 Date: 4/17/23
 */
+/*
+Modified: Caden A
+Changes: Added border, border colors, background colors, modified the nav bar
+Date: 4/25/23
+*/
 
-body{
-    background: var(--primary-color);
-    
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px;
-    margin: 1px;
+body {
+    background-image: var(--bg-gradient);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    padding-top: 2rem;
 }
 
- .h1 {
+
+.h1, .h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--third-color);
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.h1 {
     font-size: 48px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: var(--third-color);
-  }
-  .h2{
-    text-align: center;
-    color:  var(--third-color);
+}
+
+.h2 {
     font-size: 30px;
-    margin-bottom: 20px;
-  }
-p{
+}
+
+p {
     color: var(--third-color);
 }
-iframe.rule{
-    align-items:center;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: rgba(106, 163, 201, 0.7);
+    border-radius: 35px;
+    border: 2px solid #000;
+    margin-top: 2rem;
+}
+.dark-theme .container {
+    border-color: #fff; 
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 35px;
+    border: 2px solid #fff;
 }
 
- .container {
-    max-width: 1200px;
-    width: 1000px;
-    position: relative;
-    margin: auto;
- }
+.menu {
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
 
-div.menu{
-    position:fixed;
-    display:flex;
-    margin:15px auto;
-    position:absolute;
+nav {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--fourth-color);
+    font-size: 18px;
+    padding: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    color: var(--third-color);
+    background-color: var(--fifth-color);
+}
+
+iframe {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: var(--third-color);
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+:root {
+    --primary-color: #8198a6;
+    --secondary-color: #a7c6d9;
+    --third-color: #333;
+    --fourth-color: #3b4e59;
+    --fifth-color: #1fa2b9;
+    --bg-gradient: linear-gradient(to bottom, #a7c6d9, #3b4e59);
+}
+
+.dark-theme {
+    --primary-color: #141516;
+    --secondary-color: #191a19;
+    --third-color: #fdfdfd;
+    --fourth-color: #ffffff;
+    --fifth-color: #574e4e;
+    --bg-gradient: linear-gradient(to bottom, #6e6f70, #000000);
+
 }
 
 .floatLeft{
@@ -50,68 +128,21 @@ div.menu{
     float:left;
     height:150px;
     margin-right:1em;
+    margin-top: -1.5em;
 }
 .floatRight{
     display:block;
     float:right;
-    height:150px;
+    height: 150px;
     margin-right:1em;
+    margin-top: -4em;
 }
-nav a {
-    display: flex;
-    float:none;
-    color: var(--fourth-color);
-    width: 150px;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    align-items:center;
-    justify-content: space-between;
-
-
+.center {
+    display: block;
+    margin: auto;
 }
 
-
-:root{
-    
-    --primary-color: #8198a6;
-    --secondary-color: #a7c6d9;
-    --third-color:#333;
-    --fourth-color:#3b4e59;
-}
-
-.dark-theme{
-    --primary-color: #141516;
-    --secondary-color: #191a19;
-    --third-color:#fdfdfd;
-    --fourth-color:#ffffff;
-}
-
-nav{
-    display: flex;
-    align-items:center;
-    text-align:center;
-    background: var(--secondary-color);
-    position: fixed;
-    top: 0;
-    width: 100%;
+.social-icon {
+    width: 50px;
     height: 50px;
-    z-index: 5;
-    
-    
-}
-nav a:hover{
-    color: var(--fourth-color);
-    border-bottom: 2px solid var(--fourth-color);
-    border-top:var(--fourth-color);
-    
-}
-ul{
-    color: var(--fourth-color);
-}
-
-#icon{
-    width: 30px;
-    cursor: pointer;
-   
 }
