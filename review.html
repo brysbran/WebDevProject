@@ -5,15 +5,15 @@
 
 
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <script src="carousel.js"></script>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
         <title>Drumming with Adrian</title>
         <link rel="icon" href="images/Icon.png">
-        @import url('https://fonts.googleapis.com/css?family=Roboto');
-
+        <!-- @import url('https://fonts.googleapis.com/css?family=Roboto'); -->
     </head>
     <body>
     <div class="menu">
@@ -24,11 +24,11 @@
                 <a href="booking.html">Booking</a>
                 <a href="socials.html">Socials</a>
                 <a href="review.html">Reviews</a>
-                <img src="images/moon.png" id="icon">
+                <img src="images/moon.png" id="icon" alt="Dark Mode Icon">
             </nav>
         <!-- <a href="aboutus.html">/a> -->  
     </div>
-    <h1 class ="h1">Adrian's Drumming</h1>
+    <h1 class ="h1">Drumming with Adrian</h1>
         <header>
           <h2 class="h2">Submit a Review</h2>
         </header>
@@ -41,6 +41,7 @@
               <input type="email" id="email" name="email" required>
               <label class="dark-mode-text" for="rating">Rating:</label>
               <select id="rating" name="rating" required>
+                <option label="Please enter rating"></option>
                 <option value="5">5 stars</option>
                 <option value="4">4 stars</option>
                 <option value="3">3 stars</option>
@@ -55,23 +56,39 @@
         </main>
 
         <div class="container" data-carousel>
-            <ul>
-              <h2 class="h2">Reviews from Previous Students</h2>
-              <li>Name: John White<br>
-                Rating: 5 stars<br>
+          <h2 class="h2">Reviews from Previous Students</h2>  
+          <ul>
+              <li>Name: John White
+                <div style="height: 2px;">
+                </div>
+                Rating: 5 stars
+                <div style="height: 2px;">
+                </div>
                 Comment: "I've been taking drum lessons with the instructor for a few months now and I've seen a significant improvement in my drumming skills. He's patient, knowledgeable, and makes the lessons fun!
+                <div style="height: 10px;">
+                </div>
               </li>
-              <br>
               <li>
-                Name: Sarah Connor<br>
+                Name: Sarah Connor
+                <div style="height: 2px;">
+                </div>
                 Rating: 4.5 stars
+                <div style="height: 2px;">
+                </div>
                 Comment: I highly recommend the drum instruction service. The instructor's passion for drumming is contagious and his teaching style is effective. I've learned so much from him!
+                <div style="height: 10px;">
+                </div>
               </li>
-              <br>
               <li>
-                Name: Mike G <br>
-                Rating: 5 stars<br>
+                Name: Mike G 
+                <div style="height: 2px;">
+                </div>
+                Rating: 5 stars
+                <div style="height: 2px;">
+                </div>
                 Comment: The drum instructor is amazing! He's skilled, patient, and always encouraging. I've been taking lessons with him for a year and my drumming has improved tremendously.
+                <div style="height: 10px;">
+                </div>
               </li>
             </ul>
         </div>
